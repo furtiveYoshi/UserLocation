@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd">
+
+    <property name="sqlDir" value="./sql"/>
+
+    <changeSet id="init"
+               author="nikita_oleshko"
+               failOnError="true">
+        <comment>Init tables for srvice</comment>
+        <sqlFile path="${sqlDir}/init.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>
